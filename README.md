@@ -1,4 +1,5 @@
 # WritersPlace
-It is anew  social media app for comunicating to world and share your article or storys to the world
+It is a new  social media app for communicating to world 
+share your article or stories to the world
 made with the help of kotlin  android studio  and for cloud storage firebase
 
