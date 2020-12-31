@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout_article_making"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ArticleMakingActivity">
+    <Button
+            android:id="@+id/button_for_selecting_Image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+        android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="4dp"
+            android:background="@drawable/border_for_image_title"
+            android:text="@string/add_image" />
+
+        <ImageView
+            android:id="@+id/image_view_for_article"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginHorizontal="8dp"
+          android:layout_alignParentTop="true"
+            android:layout_marginVertical="4dp"
+            android:background="@drawable/border_for_image_title"
+            android:contentDescription="@string/todo"
+            />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/image_view_for_article">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <EditText
+            android:id="@+id/title_of_artical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:hint="@string/title"
+            android:importantForAutofill="no"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:autoSizeMaxTextSize="20dp"
+            tools:targetApi="o"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+            android:id="@+id/edit_text_add_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:hint="@string/content" />
+
+            <Button
+                android:id="@+id/submit_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/button_for_log_in_and_sign_in_rounded"
+                android:text="@string/submit"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="UnknownId" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar
+    android:id="@+id/progressBar_for_home"
+    style="?android:attr/progressBarStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    android:background="@android:color/transparent"
+    android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llContent_for_all"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/image_view_for_article"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:background="@drawable/border_for_image_title"
+        android:contentDescription="@string/todo"
+
+
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/single_row_textView_for_title_all"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/video_title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_for_article" />
+    <TextView
+        android:id="@+id/single_row_textView_for_content_all"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:paddingBottom="16dp"
+        android:textSize="15sp"
+        android:maxLines="4"
+        android:text="@string/channel_name"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/single_row_textView_for_title_all"
+        app:layout_constraintStart_toStartOf="@+id/single_row_textView_for_title_all"
+        app:layout_constraintTop_toBottomOf="@+id/single_row_textView_for_title_all" />
+
+
+    <TextView
+        android:id="@+id/single_row_textView_for_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="184dp"
+        android:paddingBottom="16dp"
+        android:text="@string/channel_name"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/single_row_textView_for_content_all"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/profile_of_image_for_all"
+        app:layout_constraintTop_toBottomOf="@+id/single_row_textView_for_content_all" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_of_image_for_all"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/single_row_textView_for_content_all"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+    <ImageView
+        android:id="@+id/menu_for_all_article"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_menu_foreground"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/todo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ShowProflieOfOthersActivity"
+    android:id="@+id/cl_parent"
+    android:background="@color/white"
+    android:contentDescription="For more ui/ux visit www.materialuiux.com"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:contentDescription="For more ui/ux visit www.materialuiux.com">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:contentDescription="For more ui/ux visit www.materialuiux.com"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/id_Image"
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:contentDescription="@string/todo"
+            android:src="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            tools:ignore="UselessParent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_of_image_for_all"
+                style="@style/Toolbar.TitleText"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/border_for_image_title"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="4dp" />
+
+
+            <TextView
+                android:id="@+id/title_of_Username_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="30dp"
+                android:importantForAutofill="no"
+                android:text="@string/usename"
+                android:textColor="@color/color_primary_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/title_of_Username_profile_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/following"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:importantForAutofill="no"
+                android:text="Description"
+                android:textColor="@color/color_primary_text"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/to_follow"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/title_of_Username_profile"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/round_follow"
+                android:paddingStart="18dp"
+                android:paddingTop="5dp"
+                android:text="FOLLOW"
+                android:textColor="#0000FF"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+            <LinearLayout
+                android:id="@+id/following"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/profile_of_image_for_all"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="20dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="UselessParent"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/show_follower"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:paddingStart="40dp"
+                            android:text="@string/_0"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@id/show_follower"
+                            android:layout_centerHorizontal="true"
+                            android:paddingStart="20dp"
+                            android:text="@string/follower"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            tools:ignore="RtlSymmetry" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/show_to_following"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:paddingStart="40dp"
+                        android:text="@string/_0"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        tools:ignore="RtlSymmetry" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:paddingStart="20dp"
+                        android:text="@string/following"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        tools:ignore="RtlSymmetry" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_for_other_proflie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="16dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

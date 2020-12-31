@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+    <item android:id="@+id/follower"
+        android:icon="@drawable/ic_book_foreground"
+        android:title="@string/followers"
+        />
+    <item android:id="@+id/world"
+
+        android:icon="@drawable/ic_home_foreground"
+        android:title="@string/home"
+        />
+    <item android:id="@+id/add_article"
+        android:icon="@drawable/ic_add_foreground"
+        android:title="" />
+    <item android:id="@+id/user_fav"
+        android:icon="@drawable/ic_heart_foreground"
+        android:title="@string/fav"
+        />
+    <item android:id="@+id/user_article"
+        android:icon="@drawable/ic_person_24_foreground"
+        android:title="@string/user"
+      />
+
+
+</menu>

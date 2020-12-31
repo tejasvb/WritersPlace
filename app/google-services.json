@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "84591491103",
+    "firebase_url": "https://notemaking-4b616.firebaseio.com",
+    "project_id": "notemaking-4b616",
+    "storage_bucket": "notemaking-4b616.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84591491103:android:676c6d1ecaa3d47f1ffd2a",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84591491103-6mg2cihmjhrqie0t3pc9c8agp0arsgmd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1XD9X6_IuGqp3o9XEHnSFEAsY8JohBOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84591491103-6mg2cihmjhrqie0t3pc9c8agp0arsgmd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

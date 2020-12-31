@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserProflie"
+    android:id="@+id/cl_parent"
+    android:background="@color/white"
+    android:contentDescription="For more ui/ux visit www.materialuiux.com"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        android:background="@color/white"
+        android:contentDescription="For more ui/ux visit www.materialuiux.com">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:contentDescription="For more ui/ux visit www.materialuiux.com"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="For more ui/ux visit www.materialuiux.com"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                    <ImageView
+                        android:id="@+id/id_Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/id_Image_done"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:contentDescription="@string/todo"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/id_Profile_RelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    tools:ignore="UselessParent">
+                    <!-- User Name  -->
+                    <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
+                        android:id="@+id/id_fullName_EditView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/id_Profile_Image"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="127dp"
+                        android:layout_marginTop="30dp"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:text="User Name"
+                        android:textColor="@color/black"
+                        android:visibility="gone"
+                        tools:ignore="LabelFor" />
+
+                    <TextView
+                        android:id="@+id/id_fullName_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/id_Profile_Image"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="127dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/usename"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/following"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80dp"
+                        android:layout_alignStart="@+id/id_Profile_Image"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginEnd="20dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        tools:ignore="UnknownIdInLayout">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                tools:ignore="UselessParent"
+
+                                >
+
+                                <TextView
+                                    android:id="@+id/show_follower"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:paddingStart="40dp"
+                                    android:text="@string/_0"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    tools:ignore="RtlSymmetry" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_below="@id/show_follower"
+                                    android:layout_centerHorizontal="true"
+                                    android:paddingStart="20dp"
+                                    android:text="@string/follower"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    tools:ignore="RtlSymmetry" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:weightSum="2"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/show_to_following"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:paddingStart="40dp"
+                                android:text="@string/_0"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                tools:ignore="RtlSymmetry" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:paddingStart="20dp"
+                                android:text="@string/following"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                tools:ignore="RtlSymmetry" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <EditText
+                        android:id="@+id/id_description_EditView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:text="Description"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        tools:ignore="LabelFor"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="130dp" />
+
+                    <ImageView
+                        android:id="@+id/image_view_for_edit"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignEnd="@+id/id_fullName_EditView"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/ic_pencile_foreground_yellow" />
+
+
+                    <ImageView
+                        android:id="@+id/image_view_for_edit_done"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/ic_done_foreground"
+                        android:visibility="gone" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/id_Profile_Image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:src="@color/colorPrimary"
+                        app:civ_border_color="#EEEEEE"
+                        app:civ_border_width="4dp"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <TextView
+                        android:id="@+id/id_description_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="130dp"
+                        android:text="Description"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/id_Profile_Image_button"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button_ronded"
+                        android:visibility="visible" />
+                    <!--   tittle   -->
+                </RelativeLayout>
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/frame_layout_for_current_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
